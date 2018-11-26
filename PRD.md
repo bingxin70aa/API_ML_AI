@@ -10,8 +10,8 @@
 开发者 |侯冰昕
 测试者|侯冰昕
 ### 1.3 API
-* 百度————人脸识别————人脸美颜
-* 阿里云————图像识别————图像打标
+* [百度————人脸识别————人脸美颜](http://ai.baidu.com/tech/face/detect)
+* [阿里云————图像识别————图像打标](https://data.aliyun.com/product/image?utm_content=se_1000287235)
 
 ## 二、产品需求
 ### 2.1 PURPOSE
