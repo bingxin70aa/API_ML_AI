@@ -78,6 +78,7 @@ NMT | neural Machine translation ,神经机器翻译
 [参见](http://naotu.baidu.com/file/c1278d8409bddd4e2dd29be02869d500)
 
 3.2数据间的关系
+<script src="mermaid.full.min.js"></script>
 <div class="mermaid">
 graph TD;
 A[输入] -->B[用户相册相片] ;
