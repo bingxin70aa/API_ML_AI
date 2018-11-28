@@ -73,23 +73,12 @@ NMT | neural Machine translation ,神经机器翻译
 
 **3、功能模块设计**
 
-3.1后台系统
+3.1 后台系统
 
 [参见](http://naotu.baidu.com/file/c1278d8409bddd4e2dd29be02869d500)
 
-3.2数据间的关系
-
-graph TD;
-A[输入] -->B[用户相册相片] ;
-B[用户相册相片] -->D(用户圈出被检测对象);
-A[输入] -->C[用户拍摄相片];
-C[用户拍摄相片]--> D(用户圈出被检测对象);
-D(用户圈出被检测对象)-->E[调用 Azure标记图像 API];
-E[调用 Azure标记图像 API]-->F[输出 : 检测对象的文本信息];
-F[输出 : 检测对象的文本信息]-->G[调用 有道志云API 翻译];
-G[调用 有道志云API 翻译]-->H[输出对象中文+英文];
-
-（因GFM 并没有实现流程图的 MarkDown 语法，稍后修改）
+3.2 数据流程图
+https://www.processon.com/view/link/5bfe6432e4b006dc83a82a2f
 
 
 ### N、后期准备及参考资料
