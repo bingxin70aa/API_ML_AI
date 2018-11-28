@@ -78,7 +78,7 @@ NMT | neural Machine translation ,神经机器翻译
 [参见](http://naotu.baidu.com/file/c1278d8409bddd4e2dd29be02869d500)
 
 3.2数据间的关系
-```mermaid
+<div class="mermaid">
 graph TD;
 A[输入] -->B[用户相册相片] ;
 B[用户相册相片] -->D(用户圈出被检测对象);
@@ -88,7 +88,7 @@ D(用户圈出被检测对象)-->E[调用 Azure标记图像 API];
 E[调用 Azure标记图像 API]-->F[输出 : 检测对象的文本信息];
 F[输出 : 检测对象的文本信息]-->G[调用 有道志云API 翻译];
 G[调用 有道志云API 翻译]-->H[输出对象中文+英文];
-```
+</div>
 
 
 ### N、后期准备及参考资料
