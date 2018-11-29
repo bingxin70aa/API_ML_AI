@@ -193,16 +193,20 @@ NMT | neural Machine translation ,神经机器翻译
 3.1后台系统
 
 [参见](http://naotu.baidu.com/file/c1278d8409bddd4e2dd29be02869d500)
+
 ![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/%E7%AE%A1%E7%90%86%E5%91%98.jpeg)
 
 
 3.2 数据流程图
 
 [参见](https://www.processon.com/view/link/5bfe6432e4b006dc83a82a2f)
+
 ![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
 
 3.3功能结构
+
 [参见](http://naotu.baidu.com/file/d5697afa5bb5f2220c82bca06f9f589c)
+
 ![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/app%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84.png)
 
 ### 四、产品模型
