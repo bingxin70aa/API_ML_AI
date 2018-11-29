@@ -1,5 +1,7 @@
-# 英语初学者APP产品需求文档
+# 学龄儿童记单词APP产品需求文档
 * PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
+
+# 产品需求文档
 
 ## 前期目标PRD
 
@@ -18,7 +20,9 @@
 **1、产品背景介绍**
 
 因为自身是“英语单词头痛重度患者
-”。觉得背单词枯燥乏味，面对字母就想睡，传统的单词拼写app用了无数但都很难坚持。所以就希望能够把背单词跟生活相融合，让记忆单词成为一种生活习惯，亲近并能融入生活，为像我这种“症状”的用户谋福利吧。
+”。觉得背单词枯燥乏味，面对字母就想睡，所以思考也是从英语教育app这个方向入手的。
+
+随着全球化的发展，人们对学习英语的需求越来越强烈，学龄儿童也是（其实多数是家长希望孩子如此）。市面上英语记忆类的app不少，但是质量参差不齐，大多数为游戏的形式来与单词记忆相结合，但主要依托于家长的积极性，而不是孩子主动学习培养出的兴趣。所以就希望能够把背单词跟生活相融合，让记忆单词成为一种生活习惯，亲近并能融入生活，为学习英语铺路。
 
 那么如何才能贴近生活呢？生活环境周遭的事物正是最简单的开始，为此就有了识别物体就能输出他对应的英语单词、例句，并以此引出拼写环节的想法。
 
@@ -30,12 +34,12 @@
 
 **3、目标用户、使用场景**
 
-* 目标用户：12至30岁，对英语单词记忆有困难，学习英语刚起步的用户。
+* 目标用户：主要针对6岁至18岁，对英语单词记忆有困难又提不起兴趣，英语一窍不通或者半知半解的学龄孩童。
 
 * 使用场景：任何时间地点
 
 
-**4、术语和缩写解释
+**4、术语和缩写解释**
 
 术语 | 解释
 ---|---
@@ -73,13 +77,25 @@ NMT | neural Machine translation ,神经机器翻译
 
 **3、功能模块设计**
 
-3.1 后台系统
+3.1后台系统
 
 [参见](http://naotu.baidu.com/file/c1278d8409bddd4e2dd29be02869d500)
+![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/%E7%AE%A1%E7%90%86%E5%91%98.jpeg)
+
 
 3.2 数据流程图
 
-https://www.processon.com/view/link/5bfe6432e4b006dc83a82a2f
+[参见](https://www.processon.com/view/link/5bfe6432e4b006dc83a82a2f)
+![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
+
+3.3功能结构
+[参见](http://naotu.baidu.com/file/d5697afa5bb5f2220c82bca06f9f589c)
+![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/app%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84.png)
+
+### 四、产品模型
+
+
+
 
 
 ### N、后期准备及参考资料
