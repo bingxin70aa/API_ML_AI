@@ -33,7 +33,8 @@
 
 **2、产品概述及目标**
 
-对准物体拍摄即可获取中文和对应的英文翻译信息，并即时可进行拼写，同时将识别过的单词加入单词本中，方便再进行复习。为用户提供一个可以融入生活的单词记忆工具。
+- name : **present**
+- 对准物体拍摄即可获取中文和对应的英文翻译信息，并即时可进行拼写，同时将识别过的单词加入单词本中，方便再进行复习。为用户提供一个可以融入生活的单词记忆工具。
 
 **3、目标用户、使用场景**
 
@@ -99,7 +100,7 @@ NMT | neural Machine translation ,神经机器翻译
 
 ![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/app%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%20(2).png)
 
-### 四、产品模型
+### 四、产品原型
 详情见[链接](https://bingxin70aa.github.io/present_Axure/)
 
 ###### 首页（默认页面）
@@ -122,16 +123,75 @@ NMT | neural Machine translation ,神经机器翻译
 
 ### 五、产品进度
 - [ ] app框架
-- [ ] Azure-计算机视觉-标记图像 api 调用
+- [x] Azure-计算机视觉-标记图像 api 调用
 - [x] 有道志云-翻译API调用
 
 ### 六、项目相关代码进程与展示
 
 ***azure_cv_request***
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_request.jpg?raw=true)
+
+```
+import requests
+# If you are using a Jupyter notebook, uncomment the following line.
+%matplotlib inline
+import matplotlib.pyplot as plt
+import json
+from PIL import Image
+from io import BytesIO
+import demjson
+import pandas as pd 
+
+# Replace <Subscription Key> with your valid subscription key.
+subscription_key = "c5e128b4d9aa442f8b6dc2267a852c82"
+assert subscription_key
+
+# You must use the same region in your REST call as you used to get your
+# subscription keys. For example, if you got your subscription keys from
+# westus, replace "westcentralus" in the URI below with "westus".
+#
+# Free trial subscription keys are generated in the "westus" region.
+# If you use a free trial subscription key, you shouldn't need to change
+# this region.
+vision_base_url = "http://api.cognitive.azure.cn/vision/v1.0/"
+
+analyze_url = vision_base_url + "tag"
+
+# Set image_url to the URL of an image that you want to analyze.
+image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/" + \
+    "Broadway_and_Times_Square_by_night.jpg/450px-Broadway_and_Times_Square_by_night.jpg"
+
+headers = {'Ocp-Apim-Subscription-Key': subscription_key }
+params  = {'visualFeatures': 'Categories,Description,Color'}
+data    = {'url': image_url}
+response = requests.post(analyze_url, headers=headers, params=params, json=data)
+response.raise_for_status()
+
+analysis = response.json()
+
+data = demjson.encode(response.json())
+text = demjson.decode(data)
+
+# data['pois']是列表，含关键字搜索结果
+# 大数据模块 pandas 简化输出 
+df = pd.DataFrame(text['tags'])
+df['name']
+#列表推导
+name = [x['name'] for x in text['tags']]
+name
+```
+- 输出识别结果，即图中物体的名字
+> ['building',
+ 'outdoor',
+ 'street',
+ 'city',
+ 'people',
+ 'busy',
+ 'night',
+ 'ride',
+ 'crowd']
+
 
 ***transform_request_result:***
-
 ```
 # -*- coding:utf-8 -*-
 from openpyxl import load_workbook
@@ -144,8 +204,8 @@ import re
  
 def fetch(query_str):
     query = {'q': "".join(query_str)}   # list --> str: "".join(list)
-    fromLang = 'zh-CHS'
-    toLang = 'EN'
+    fromLang = 'EN'
+    toLang = 'zh-CHS'
     url = 'https://fanyi.youdao.com/openapi.do?keyfrom=11pegasus11&key=273646050&type=data&doctype=json&version=1.1&' + urlencode(query)
     response = urlopen(url, timeout=3)
     html = response.read().decode('utf-8')
@@ -207,3 +267,5 @@ if __name__ == '__main__':
 * [PRD推进方式及思考](http://note.youdao.com/noteshare?id=9e2e2d3a2cf39b53818b7f4095a0de5e)
 
 * [杂乱无章](http://note.youdao.com/noteshare?id=6fd7164543137fb310dac76de65948fe)
+
+* [Error](http://note.youdao.com/noteshare?id=414a03b9d7e9ccde11c0bbd1a79b8bbd)
