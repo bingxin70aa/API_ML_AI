@@ -1,14 +1,9 @@
 # 学龄儿童记单词APP产品需求文档
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 
-
-
-
-# 产品需求文档
-
 ## 前期目标PRD
 
-文件状态 | 草稿
+文件状态 | 正在发布
 ---|---
 当前版本 | Beta
 作者 | 侯冰昕
