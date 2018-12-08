@@ -3,11 +3,11 @@
 
 ## 前期目标PRD
 
-文件状态 | 正在发布
+文件状态 | 草稿
 ---|---
 当前版本 | Beta
 作者 | 侯冰昕
-网址 | 
+网址 | https://github.com/bingxin70aa/API_ML_AI/edit/master/PRD.md
 完成日期 |2018-11-28
 
 ## 修订历史
@@ -123,136 +123,12 @@ NMT | neural Machine translation ,神经机器翻译
 
 ### 六、项目相关代码进程与展示
 
-***azure_cv_request***
-
-```
-import requests
-# If you are using a Jupyter notebook, uncomment the following line.
-%matplotlib inline
-import matplotlib.pyplot as plt
-import json
-from PIL import Image
-from io import BytesIO
-import demjson
-import pandas as pd 
-
-# Replace <Subscription Key> with your valid subscription key.
-subscription_key = "c5e128b4d9aa442f8b6dc2267a852c82"
-assert subscription_key
-
-# You must use the same region in your REST call as you used to get your
-# subscription keys. For example, if you got your subscription keys from
-# westus, replace "westcentralus" in the URI below with "westus".
-#
-# Free trial subscription keys are generated in the "westus" region.
-# If you use a free trial subscription key, you shouldn't need to change
-# this region.
-vision_base_url = "http://api.cognitive.azure.cn/vision/v1.0/"
-
-analyze_url = vision_base_url + "tag"
-
-# Set image_url to the URL of an image that you want to analyze.
-image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/" + \
-    "Broadway_and_Times_Square_by_night.jpg/450px-Broadway_and_Times_Square_by_night.jpg"
-
-headers = {'Ocp-Apim-Subscription-Key': subscription_key }
-params  = {'visualFeatures': 'Categories,Description,Color'}
-data    = {'url': image_url}
-response = requests.post(analyze_url, headers=headers, params=params, json=data)
-response.raise_for_status()
-
-analysis = response.json()
-
-data = demjson.encode(response.json())
-text = demjson.decode(data)
-
-# data['pois']是列表，含关键字搜索结果
-# 大数据模块 pandas 简化输出 
-df = pd.DataFrame(text['tags'])
-df['name']
-#列表推导
-name = [x['name'] for x in text['tags']]
-name
-```
-- 输出识别结果，即图中物体的名字
-> ['building',
- 'outdoor',
- 'street',
- 'city',
- 'people',
- 'busy',
- 'night',
- 'ride',
- 'crowd']
+[***azure_cv_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
 
 
-***transform_request_result:***
-```
-# -*- coding:utf-8 -*-
-from openpyxl import load_workbook
-from openpyxl import Workbook
-import json
-import sys
-from urllib.parse import urlparse, quote, urlencode, unquote
-from urllib.request import urlopen
-import re
- 
-def fetch(query_str):
-    query = {'q': "".join(query_str)}   # list --> str: "".join(list)
-    fromLang = 'EN'
-    toLang = 'zh-CHS'
-    url = 'https://fanyi.youdao.com/openapi.do?keyfrom=11pegasus11&key=273646050&type=data&doctype=json&version=1.1&' + urlencode(query)
-    response = urlopen(url, timeout=3)
-    html = response.read().decode('utf-8')
-    return html
- 
-def parse(html, num):
-    d = json.loads(html)
-    try:
-        if d.get('errorCode') == 0:
-            explains = d.get('basic').get('explains')
-            result = str(explains).replace('\'', "").replace('[', "").replace(']', "")  #.replace真好用~
-            sheet.cell(row=num, column=2).value = result
-            num = num+1
-            for i in explains:
-                print(i)
-        else:
-            print('无法翻译!****')
-            sheet.cell(row = num, column = 2).value = ' '       #若无法翻译，则空出来
-            num = num + 1
-    except:
-        print('****翻译出错!')      #若无法翻译，则空出来
-        sheet.cell(row = num, column = 2).value = ' '
-        num = num + 1
 
-def main():
-    Sheet1 = ExcelFile['Sheet1']; num = 1
-    while(1):
-        word = Sheet1.cell(row = num+2, column = 1).value
-        if(word != None):
-            print('正在翻译第', end=''); print(num, end=''); print('个单词')
-            print(word)
-            parse(fetch(word), num)
-            num += 1
-            print()
-        else:
-            print('翻译结束！')
-            break
-    ExcelFile.close()
-    out.save('out.xlsx')
+[***transform_request_result:***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
 
-
-    
-if __name__ == '__main__':
-    ExcelFile = load_workbook('/Users/rongrong/Desktop/trybook.xlsx')      #输入文件
-    out = Workbook()
-    sheet = out.active
-    sheet.title = "out"
-    main()
-    
-```
-
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/transform_request_result.jpg?raw=true)
 
 
 
@@ -264,3 +140,10 @@ if __name__ == '__main__':
 * [杂乱无章](http://note.youdao.com/noteshare?id=6fd7164543137fb310dac76de65948fe)
 
 * [Error](http://note.youdao.com/noteshare?id=414a03b9d7e9ccde11c0bbd1a79b8bbd)
+
+## 清单
+* [产品原型文档](https://bingxin70aa.github.io/present_Axure/#g=1)
+* 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
+* 已尝试调用的API的输入输出
+    * [***azure_cv_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
+    * [***transform_request_result:***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
