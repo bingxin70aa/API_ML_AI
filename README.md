@@ -5,11 +5,9 @@
 
 文件状态 | 草稿
 ---|---
-当前版本 | Beta
+文档状态 | 进行中
 作者 | 侯冰昕
 完成日期 |2018-11-28
-
-## 修订历史
 
 
 
@@ -79,7 +77,6 @@ NMT | neural Machine translation ,神经机器翻译
 
 [参见](http://naotu.baidu.com/file/c1278d8409bddd4e2dd29be02869d500)
 
-![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/%E7%AE%A1%E7%90%86%E5%91%98.jpeg)
 
 
 3.2 数据流程图
@@ -113,6 +110,8 @@ NMT | neural Machine translation ,神经机器翻译
 ![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E5%AE%9E%E7%89%A9%E6%8B%8D%E6%91%84%E5%B0%8F%E7%AA%8D%E9%97%A8.jpg?raw=true)
 
 
+
+
 ### 五、产品进度
 - [ ] app框架
 - [x] Azure-计算机视觉-标记图像 api 调用
@@ -132,10 +131,40 @@ NMT | neural Machine translation ,神经机器翻译
 
 * [Error](http://note.youdao.com/noteshare?id=414a03b9d7e9ccde11c0bbd1a79b8bbd)
 
+
+## 实在细节
+### 一、PRD
+#### PRD1.加值宣言
+* 将传统的背单词app与物体检测结合，打破死记硬背的方式记忆单词，赋予趣味性，为用户记忆单词提供动能，增添用户粘性。
+#### PRD2.核心价值
+* 依靠主观能动来进行单词记忆
+#### PRD3.核心价值与用户痛点
+* 用户觉得单纯的单词背诵有些枯燥无味，难以坚持
+* 大部分用户觉得背单词只是任务，自身无很强的动力和自制力，多数依赖父母，由其监管下进行。
+#### PRD4.人工智能概率性与用户痛点
+* 可导致识别失败的因素及其如何解决：
+    * 无法检测出物体
+    * **解决方式**：弹出提示“无法检测出物体”，帮助用户重新返回到拍摄页面进行再次拍摄-涂抹-识别。
+    * 物体识别出错或不匹配
+    * **解决方式**：
+        1. 用户可通过滑动卡片，选择性添加识别对象的单词及中文意思（见camera-4右侧的[释义](https://bingxin70aa.github.io/present_Axure/)）
+        2.创建一个用户界面，指引人们在运行分类器之前确保摄像头画面中已经出现了要分类的目标
+
+#### PRD5.需求列表与人工智能API加值
+* 需求列表
+
+Title | User story | Importance | Notes
+---|---|---|---
+识别前的拍摄 | 用户拍摄对象清晰，准确 | 非常重要|对模糊不清的图片进行反馈，以保证对象能够顺利识别
+识别前的涂抹 | 用户涂抹出完整的检测区域 | 非常重要 | 用户会涂抹不完整或有缺口，需提示用户绘制完全
+
+### 二、原型
+#### 原型1.交互及界面设计
+
+    
 ## 清单
 * [产品原型文档](https://bingxin70aa.github.io/present_Axure/#g=1)
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
     * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
-
