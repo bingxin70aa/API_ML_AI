@@ -7,7 +7,6 @@
 ---|---
 当前版本 | Beta
 作者 | 侯冰昕
-网址 | https://github.com/bingxin70aa/API_ML_AI/edit/master/PRD.md
 完成日期 |2018-11-28
 
 ## 修订历史
