@@ -114,8 +114,6 @@ NMT | neural Machine translation ,神经机器翻译
 ![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E5%AE%9E%E7%89%A9%E6%8B%8D%E6%91%84%E5%B0%8F%E7%AA%8D%E9%97%A8.jpg?raw=true)
 
 
-
-
 ### 五、产品进度
 - [ ] app框架
 - [x] Azure-计算机视觉-标记图像 api 调用
@@ -123,14 +121,8 @@ NMT | neural Machine translation ,神经机器翻译
 
 ### 六、项目相关代码进程与展示
 
-[***azure_cv_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
-
-
-
-[***transform_request_result:***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
-
-
-
+* [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
+* [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
 
 
 
@@ -145,5 +137,6 @@ NMT | neural Machine translation ,神经机器翻译
 * [产品原型文档](https://bingxin70aa.github.io/present_Axure/#g=1)
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 已尝试调用的API的输入输出
-    * [***azure_cv_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
-    * [***transform_request_result:***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
+    * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
+    * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
+
