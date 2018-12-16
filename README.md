@@ -15,18 +15,15 @@
 **1、产品背景介绍**
 
 因为自身是“英语单词头痛重度患者
-”。觉得背单词枯燥乏味，面对字母就想睡，所以思考也是从英语教育app这个方向入手的。
+”。觉得背单词枯燥乏味，面对字母就想睡，有多数
 
-随着全球化的发展，人们对学习英语的需求越来越强烈，学龄儿童也是（其实多数是家长希望孩子如此）。市面上英语记忆类的app不少，但是质量参差不齐，大多数为游戏的形式来与单词记忆相结合，但主要依托于家长的积极性，而不是孩子主动学习培养出的兴趣。所以就希望能够把背单词跟生活相融合，让记忆单词成为一种生活习惯，亲近并能融入生活，为学习英语铺路。
+随着全球化的发展，人们对学习英语的需求越来越强烈，学龄儿童也是（其实多数是家长希望孩子如此）。市面上英语记忆类的app不少，但是质量参差不齐，大多数为游戏的形式来与单词记忆相结合，但主要依托于家长的积极性，而不是孩子主动学习培养出的兴趣。所以希望能够把背单词跟生活相融合，让记忆单词成为一种生活习惯，亲近并能融入生活，为深度学习英语铺路。
 
-那么如何才能贴近生活呢？生活环境周遭的事物正是最简单的开始，为此就有了识别物体就能输出他对应的英语单词，并以此引出拼写环节的想法。
-
-其实百度翻译已经有在做实物翻译，但未让“翻译实用化”，用户需求少，受众面向较狭窄。本产品也会对此取其精华，去其糟粕，实现产品的核心价值。
 
 **2、产品概述及目标**
 
 - name : **present**
-- 对准物体拍摄即可获取中文和对应的英文翻译信息，并即时可进行拼写，同时将识别过的单词加入单词本中，方便再进行复习。为用户提供一个可以融入生活的单词记忆工具。
+- 这是一款通过物体识别的方式英语单词学习APP。对准物体拍摄即可获取中文和对应的英文翻译信息，并即时可进行拼写，同时将识别过的单词加入单词本中，方便再进行复习。为用户提供一个可以融入生活、激发出学习的主观能动性的单词记忆工具。
 
 **3、目标用户、使用场景**
 
@@ -40,12 +37,15 @@
 术语 | 解释
 ---|---
 NMT | neural Machine translation ,神经机器翻译
+艾宾浩斯记忆曲线 | 遗忘率随时间的流逝而先快后慢，特别是在刚刚识记的短时间里，遗忘最快。
+席勒-斯宾塞理论 | 艺术活动是无功利无目的自由的游戏活动，是人与生俱来的本能，艺术就起源于人的游戏本能或冲动。
 
 [参考链接之百度](http://www.sohu.com/a/122262870_116441)
 [参考链接之谷歌](http://www.sohu.com/a/157050254_642762)
 
+**5、竞品分析**
 
-
+百度翻译已经有在做实物翻译，但未让“翻译实用化”，用户需求少，受众面向较狭窄。本产品也会对此取其精华，去其糟粕，实现产品的核心价值。
 
 ### 二、产品角色
 
@@ -83,31 +83,31 @@ NMT | neural Machine translation ,神经机器翻译
 
 [参见](https://www.processon.com/view/link/5bfe6432e4b006dc83a82a2f)
 
-![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
+![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg?raw=true)
 
 3.3功能结构
 
 [参见](http://naotu.baidu.com/file/d5697afa5bb5f2220c82bca06f9f589c)
 
-![image](https://raw.githubusercontent.com/bingxin70aa/API_ML_AI/master/app%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%20(2).png)
+![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/app%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%20(2).png?raw=true)
 
 ### 四、产品原型
 详情见[链接](https://bingxin70aa.github.io/present_Axure/)
 
 ###### 首页（默认页面）
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B_%E9%A6%96%E9%A1%B5.jpg?raw=true)
+![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B_%E9%A6%96%E9%A1%B5.jpg?raw=true)
 
 ###### 单词本
 
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/child%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E5%8D%95%E8%AF%8D%E6%9C%AC.jpg?raw=true)
+![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/child%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E5%8D%95%E8%AF%8D%E6%9C%AC.jpg?raw=true)
 
 ###### 个人中心
 
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.jpg?raw=true)
+![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.jpg?raw=true)
 
 ###### 实物拍摄小窍门
 
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E5%AE%9E%E7%89%A9%E6%8B%8D%E6%91%84%E5%B0%8F%E7%AA%8D%E9%97%A8.jpg?raw=true)
+![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/child%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E2%80%94%E2%80%94%E5%AE%9E%E7%89%A9%E6%8B%8D%E6%91%84%E5%B0%8F%E7%AA%8D%E9%97%A8.jpg?raw=true)
 
 
 
@@ -168,3 +168,4 @@ Title | User story | Importance | Notes
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
     * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
+
