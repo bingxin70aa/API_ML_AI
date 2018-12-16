@@ -2,7 +2,7 @@
 * 首个产品需求文档“ PRD.md” 现更改为“PRD_1.0”(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 
 - [PRD](#前期目标PRD)
-    - [加值宣言](#一、项目概述)
+    - [加值宣言](#用户痛点)
 
 ## 前期目标PRD
 
