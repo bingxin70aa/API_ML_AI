@@ -11,10 +11,10 @@
     - [交互及界面设计](#企鹅默认页面)
     - [信息设计](#三产品功能)
     - [原型文档]
-- [API产品使用关键AI或机器学习之API的输出入展示](#1项目相关代码进程与展示)
+- [API产品使用关键AI或机器学习之API的输出入展示](#六产品使用关键AI或机器学习之API的输出入展示)
     - [使用水平](#1项目相关代码进程与展示)
     - [使用比较分析](#3使用比较分析结果)
-    - [使用后风险报告](#42输入输出限制)
+    - [使用后风险报告](#4风险报告)
     - [加分项](#7需求列表)
 
 
@@ -185,14 +185,14 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
 
 #### 3、使用比较分析结果 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
-* Google Object Detection API 
-    * 格外的强大，同一张图片可以识别出14个对象并且进行截取储存，相比之下Azure_API在识别个数上较为不足。
-    * 但是其劣势也比较明显，目前尝试的模型仅支持80种物体。之前尝试识别[老虎](http://f2.dn.anqu.com/orgin/NTkzNg==/allimg/120624/30-120624153613.jpg)因为不存在在类型对象中，所以返回的对象变成相差甚远的了“长颈鹿“（giraffe）。
-    * 识别速度也比较慢，尽管可以调整检测速度(detection_speed)，但相对应的识别精准度也会下降很多，当检测速度调整为fast时同样是该[图片](https://upload-images.jianshu.io/upload_images/14204282-d2168c34274d01ab.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 仅能识别到7个对象。
-* 百度API
-    * 识别效果垫底，肉眼可见不赘述
-* Face++_Detect Scene And Object API
-    * 相比之下，Face++的API精准度远不如Azure和谷歌的API，不仅将对象的空间误识别为超市（事实上是饭堂），数量上也并没有优势。
+> * Google Object Detection API 
+* 格外的强大，同一张图片可以识别出14个对象并且进行截取储存，相比之下Azure_API在识别个数上较为不足。
+* 但是其劣势也比较明显，目前尝试的模型仅支持80种物体。之前尝试识别[老虎](http://f2.dn.anqu.com/orgin/NTkzNg==/allimg/120624/30-120624153613.jpg)因为不存在在类型对象中，所以返回的对象变成相差甚远的了“长颈鹿“（giraffe）。
+* 识别速度也比较慢，尽管可以调整检测速度(detection_speed)，但相对应的识别精准度也会下降很多，当检测速度调整为fast时同样是该[图片](https://upload-images.jianshu.io/upload_images/14204282-d2168c34274d01ab.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 仅能识别到7个对象。
+>* 百度API
+* 识别效果垫底，肉眼可见不赘述
+>* Face++_Detect Scene And Object API
+* 相比之下，Face++的API精准度远不如Azure和谷歌的API，不仅将对象的空间误识别为超市（事实上是饭堂），数量上也并没有优势。
 
 
 * 速度：百度>Azure>Face++>谷歌
@@ -200,7 +200,7 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * 价格（粗略判断）：Face++>Azure>百度>谷歌
 
 
-* 结论：因为Azure-标记图像的调用结果已经能满足用户的调用需求，而目前（力所能及之下）调用google Object Detection API的结果缺点过于明显，因此Azure-标记图像更加适用该产品。
+* **结论**：因为Azure-标记图像的调用结果已经能满足用户的调用需求，而目前（力所能及之下）调用google Object Detection API的结果缺点过于明显，因此Azure-标记图像更加适用该产品。
 
 
 #### 4、风险报告
@@ -218,7 +218,7 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 ##### 4.3 市场竞争程度
 ###### 4.3.1 物体识别app市场
-* 百度翻译 ：实物检测在该翻译APP的<小应用>中存在。识别物体的流程为：输入图片（相册/相机）——圈出（涂抹出）检测对象——输出中英翻译结果。在识别物体中增加了涂抹的一个步骤，给用户带来了不必要的麻烦，而且识别成功率很低（2/5），识别失败后就会重新再进行图片输入，流程过于繁琐，给用户带来不好的用户体验。
+* 百度翻译 ：实物检测在该翻译APP的<小应用>中存在。识别物体的流程为：输入图片（相册/相机）——圈出（涂抹出）检测对象——输出中英翻译结果。在识别物体中增加了涂抹的一个步骤，给用户带来了不必要的麻烦，而且识别成功率很低（2/5）.识别失败后就会重新再进行图片输入，流程过于繁琐，给用户带来不好的用户体验。
 * 听道/eyemene : 针对于盲人朋友的一款为生活提供便利的 app，因用户画像差异较大便不予以比较。
 
 ###### 4.3.2 单词记忆app市场
@@ -241,4 +241,3 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * 使用比较分析（包含Object Detection API的调用）
     * [AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face++API](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 * 使用后风险报告_输入输出限制 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
-
