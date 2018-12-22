@@ -184,7 +184,9 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 #### 2、TensorFlow Object Detection API(舍弃)
 * [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
 
-#### 3、使用比较分析结果 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
+#### 3、使用比较分析结果
+
+[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
 > * Google Object Detection API 
 * 格外的强大，同一张图片可以识别出14个对象并且进行截取储存，相比之下Azure_API在识别个数上较为不足。
 * 但是其劣势也比较明显，目前尝试的模型仅支持80种物体。之前尝试识别[老虎](http://f2.dn.anqu.com/orgin/NTkzNg==/allimg/120624/30-120624153613.jpg)因为不存在在类型对象中，所以返回的对象变成相差甚远的了“长颈鹿“（giraffe）。
@@ -207,7 +209,9 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 ##### 4.1 物体检测API发展性
 * 中国产业调研网发布的2016-2022年中国机器视觉市场现状研究分析与发展趋势预测报告认为，国内机器视觉专利数量逐年增加，各大高校及企业纷纷投入精力在机器视觉领域进行研究，国内机器视觉行业正处于一个飞速发展的阶段。国内机器视觉产业主要集中沿海发达省份及北京地区，江苏、广东、浙江、北京、上海五省市专利数量占到全国总申请数量的75%。
 
-##### 4.2 输入输出限制 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
+##### 4.2 输入输出限制
+
+[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
 * 黑白照片不影响识别结果（不涉及灰度）
 * 模糊的照片会对识别个数以及识别准确率带来一定程度的影响
 * 在识别人的方面准确率较高，但物体上如果物体离镜头过近、角度问题、或是没有拍摄出物体的基本特征就会导致识别错误或是识别不准确。
