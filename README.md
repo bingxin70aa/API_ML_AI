@@ -182,11 +182,11 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 
 #### 2、TensorFlow Object Detection API(舍弃)
-* [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
+* [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 
 #### 3、使用比较分析结果
 
-[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI.ipynb)
+[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 > * Google Object Detection API 
 * 格外的强大，同一张图片可以识别出14个对象并且进行截取储存，相比之下Azure_API在识别个数上较为不足。
 * 但是其劣势也比较明显，目前尝试的模型仅支持80种物体。之前尝试识别[老虎](http://f2.dn.anqu.com/orgin/NTkzNg==/allimg/120624/30-120624153613.jpg)因为不存在在类型对象中，所以返回的对象变成相差甚远的了“长颈鹿“（giraffe）。
