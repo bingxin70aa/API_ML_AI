@@ -93,7 +93,7 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 功能 | 用户案例 | 重要程度 | 技术领域
 ---|---|---|---
 物体检测 | 用户想要学习物体的英文单词 |重要|[计算机视觉-Azure-REST API-分析图像](https://docs.azure.cn/zh-cn/cognitive-services/computer-vision/concept-tagging-images#image-tagging-example)
-单词翻译 | 用户想要了解检测对象的中文释义 | 重要|[有道z智云API](https://ai.youdao.com/docs/doc-trans-api.s#p08)
+单词翻译 | 用户想要了解检测对象的中文释义 | 重要|[有道智云API](https://ai.youdao.com/docs/doc-trans-api.s#p08)
 
 
 ### 二、产品角色
