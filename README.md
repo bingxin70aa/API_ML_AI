@@ -10,7 +10,7 @@
 - [原型](#四产品原型)
     - [交互及界面设计](#企鹅默认页面)
     - [信息设计](#三产品功能)
-    - [原型文档]
+    - [原型文档](https://bingxin70aa.github.io/Axure_interactive_care_app/)
 - [API产品使用关键AI或机器学习之API的输出入展示](#六产品使用关键AI或机器学习之API的输出入展示)
     - [使用水平](#六产品使用关键AI或机器学习之API的输出入展示)
     - [使用比较分析](#3使用比较分析结果)
@@ -128,7 +128,9 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 
 ### 四、产品原型
-详情见[链接](https://bingxin70aa.github.io/present_Axure/)
+* 产品原型文档见[链接](https://bingxin70aa.github.io/present_Axure/)
+
+* 可交互产品原型见[链接](https://bingxin70aa.github.io/Axure_interactive_care_app/)
 
 ###### 单词cool
 ![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/V2.1_prototype_word.jpeg?raw=true)
@@ -238,6 +240,7 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
     
 ## 清单
 * [产品原型文档](https://bingxin70aa.github.io/present_Axure/#g=1)
+* [可交互产品原型](https://bingxin70aa.github.io/Axure_interactive_care_app/)
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
