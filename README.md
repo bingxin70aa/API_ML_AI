@@ -124,7 +124,6 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 [参见](https://www.processon.com/view/link/5bfe6432e4b006dc83a82a2f)
 
-![image](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg?raw=true)
 
 
 ### 四、产品原型
