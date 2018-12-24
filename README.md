@@ -241,6 +241,7 @@ k12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 ## 清单
 * [产品原型文档](https://bingxin70aa.github.io/present_Axure/#g=1)
 * [可交互产品原型](https://bingxin70aa.github.io/Axure_interactive_care_app/)
+* [可供下载的MVP](https://github.com/bingxin70aa/Axure_interactive_care_app)
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
