@@ -213,7 +213,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 * **结论**：因为Azure-标记图像的调用结果已经能满足用户的调用需求，而目前（力所能及之下）调用google Object Detection API的结果缺点过于明显，因此Azure-标记图像更加适用该产品。
 
-##### 3.2 英语发音纠错API（属于）
+##### 3.2 英语发音纠错API
 * [腾讯云](https://imgcache.qq.com/open/qcloud/soe-demo/pc-demo/index.html#/word?pattern=3.5)
     * 支持从儿童到成人全年龄覆盖的语音评测，支持单词（词语），句子等多种模式，支持发音准确度（GOP），流利度，完整度，重音准确度等全方位打分机制，专家打分相似度 95% 以上。【官方资料】
     * 返回数据结构：
