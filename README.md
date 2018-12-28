@@ -23,7 +23,7 @@
 文件状态 | 草稿
 ---|---
 文档状态 | 进行中
-版本 | V2.1
+版本 | V2.1.2
 作者 | 侯冰昕
 完成日期 | to be continued
 
@@ -32,6 +32,7 @@
 版本 | 日期 |修改内容
 ---|---|---
 V2.1 | 2018-11-28| APP游戏化
+V2.1.2|2018-12-26| 单词集API+单词纠错API
 
 前 V2.0-child（无添加游戏元素前） [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_2.0.md)
 
@@ -90,11 +91,12 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 #### 7、需求列表
 
-功能 | 用户案例 | 重要程度 | 技术领域
+功能 | 用户案例 | 重要程度 | 技术
 ---|---|---|---
 物体检测 | 用户想要认识物体对象 |重要|[计算机视觉-Azure-REST API-分析图像](https://docs.azure.cn/zh-cn/cognitive-services/computer-vision/concept-tagging-images#image-tagging-example)
 单词翻译 | 用户想要了解检测对象的中文释义 | 重要|[有道智云API](https://ai.youdao.com/docs/doc-trans-api.s#p08)
-
+发音纠错 | 用户想要检验单词发音的精准度 | 重要 | [腾讯云-智聆口语评测（英文版）](https://cloud.tencent.com/product/soe)
+单词集（库） | 用户不那么想要通过物体识别获取单词 |一般|[我爱背单词](https://github.com/bingxin70aa/API_ML_AI/blob/master/text_english.py)
 
 ### 二、产品角色
 
@@ -155,12 +157,12 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 - [x] app产品框架
 - [x] Azure-计算机视觉-标记图像 api 调用
 - [x] 有道志云-翻译API调用
-- [ ] 游戏规则
+
 
 ### 六、产品使用关键AI或机器学习之API的输出入展示
 
-#### 1、Azure
-**Azure-标记图像api**
+#### 1、产品使用到的API展示
+##### 6.1.1 **Azure-标记图像api**
 
 [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
 
@@ -176,17 +178,18 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
  'crowd']
 -------------------
 
-**有道志云-翻译API**
+##### 6.1.2 **有道志云-翻译API**
 * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
 
-
-
+##### 6.1.3 **我爱背单词-单词集API**
+* [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/text_english.py)
 
 #### 2、TensorFlow Object Detection API(舍弃)
 * [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 
 #### 3、使用比较分析结果
 
+##### 3.1 物体识别API
 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 > * Google Object Detection API 
 * 格外的强大，同一张图片可以识别出14个对象并且进行截取储存，相比之下Azure_API在识别个数上较为不足。
@@ -204,6 +207,18 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 
 * **结论**：因为Azure-标记图像的调用结果已经能满足用户的调用需求，而目前（力所能及之下）调用google Object Detection API的结果缺点过于明显，因此Azure-标记图像更加适用该产品。
+
+##### 3.2 英语发音纠错API（属于）
+* [腾讯云](https://imgcache.qq.com/open/qcloud/soe-demo/pc-demo/index.html#/word?pattern=3.5)
+    * 支持从儿童到成人全年龄覆盖的语音评测，支持单词（词语），句子等多种模式，支持发音准确度（GOP），流利度，完整度，重音准确度等全方位打分机制，专家打分相似度 95% 以上。【官方资料】
+    * 返回数据结构：
+        * 主要参数为：句子、单词、音节
+        * 相比之下的优势：有精准度、流利度、完整度指标
+* [SpeechX](https://dev01.io.speechx.cn/toucan/#/evaluate)
+    * 返回数据结构：
+        * 主要参数为：句子、单词、音节、音素 
+        * 相比之下的优势：有英式英语和美式英语提供选择；有评测等级（宽松、中等、严格）
+* 选择调用结果（暂定）：腾讯云
 
 
 #### 4、风险报告
@@ -245,6 +260,8 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
     * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
+    * [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/text_english.py)
 * 使用比较分析（包含Object Detection API的调用）
     * [AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face++API](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
+
 * 使用后风险报告_输入输出限制 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
