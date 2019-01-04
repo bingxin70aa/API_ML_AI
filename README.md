@@ -1,6 +1,7 @@
 # 云起APP产品需求文档
 * 首个产品需求文档“ PRD.md” 现更改为“PRD_1.0”(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
-
+* 这是个针对K12阶段用户培养英语单词兴趣的教育类app。
+---
 - [PRD](#前期目标PRD)
     - [加值宣言](#1产品背景介绍加值宣言)
     - [核心价值](#4产品概述及目标)
@@ -20,12 +21,12 @@
 
 ## 前期目标PRD
 
--|-
+- | -
 ---|---
-文档状态 | 完成
+文档状态 | 已完成
 版本 | V2.1.2
 作者 | 侯冰昕
-完成日期 | 2018-12-28
+完成日期 | 2018-12-31
 
 ## 修改历史
 
@@ -77,6 +78,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 #### 5、概率性
 ##### 5.1 人工智能的概率性
+
 * 可能导致识别失败的因素及其如何解决：
     * 无法检测出物体
     * **解决方式**：弹出提示“无法检测出物体”，帮助用户重新返回到拍摄页面进行再次拍摄-识别。
@@ -101,14 +103,14 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 物体检测 | 用户想要认识物体对象 |重要|[计算机视觉-Azure-REST API-分析图像](https://docs.azure.cn/zh-cn/cognitive-services/computer-vision/concept-tagging-images#image-tagging-example)
 单词翻译 | 用户想要了解检测对象的中文释义 | 重要|[有道智云API](https://ai.youdao.com/docs/doc-trans-api.s#p08)
 发音纠错 | 用户想要检验单词发音的精准度 | 重要 | [腾讯云-智聆口语评测（英文版）](https://cloud.tencent.com/product/soe)
-单词集（库） | 用户不那么想要通过物体识别获取单词 |一般|[我爱背单词](https://github.com/bingxin70aa/API_ML_AI/blob/master/text_english.py)
+单词集（库） | 用户不那么想要通过物体识别获取单词 |一般|[我爱背单词](https://www.showapi.com/api/view/8)
 
 ### 二、产品角色
 
 名称| 说明
 ---|---
 系统管理员 | 拥有所有权限
-超级饲养员 | 除个人中心权限外，解锁所有附加功能（见说明）
+超级饲养员 | 除个人中心权限外，解锁所有附加功能（见[说明](http://naotu.baidu.com/file/0ab62f902fa8ed684cbcc9578942eb05?token=b1e3a5c414bca935)）
 普通用户 | 	仅有前端个人中心的权限
 
 ### 三、产品功能
@@ -124,7 +126,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 详细[参见](http://naotu.baidu.com/file/0ab62f902fa8ed684cbcc9578942eb05?token=b1e3a5c414bca935)
 
-注：*表示<超级饲养员>/购买后才拥有的功能
+注：“*” 表示<超级饲养员>/购买后才拥有的功能
 
 
 #### 3、物体识别流程图
@@ -134,7 +136,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 
 ### 四、产品原型
-* 产品原型文档见[链接](https://bingxin70aa.github.io/present_Axure/)
+* 产品原型文档见[链接](https://bingxin70aa.github.io/Axure_yunqi/)
 
 * 可交互产品原型见[链接](https://bingxin70aa.github.io/Axure_interactive_care_app/)
 
@@ -187,7 +189,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
 
 ##### 6.1.3 **我爱背单词-单词集API**
-* [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/text_english.py)
+* [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/English_word_API.ipynb)
 
 #### 2、TensorFlow Object Detection API(舍弃)
 * [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
@@ -224,7 +226,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
         * 主要参数为：句子、单词、音节、音素 
         * 相比之下的优势：有英式英语和美式英语提供选择；有评测等级（宽松、中等、严格）
 * 选择调用结果（暂定）：腾讯云
-
+* ps : 因两个API都未支持python，所以没有代码的调用仅是文字比对。
 
 #### 4、风险报告
 ##### 4.1 物体检测API发展性
@@ -258,14 +260,14 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
     
 ## 清单
-* [产品原型文档](https://bingxin70aa.github.io/present_Axure/#g=1)
+* [产品原型文档](https://bingxin70aa.github.io/Axure_yunqi/)
 * [可交互产品原型](https://bingxin70aa.github.io/Axure_interactive_care_app/)
 * [可供下载的MVP](https://github.com/bingxin70aa/Axure_interactive_care_app)
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
     * [***youdao_translation_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/youdao_translation_api_request.ipynb)
-    * [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/text_english.py)
+    * [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/English_word_API.ipynb)
 * 使用比较分析（包含Object Detection API的调用）
     * [AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face++API](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 
