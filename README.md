@@ -272,4 +272,5 @@ python调用测试，详细[参见](https://github.com/bingxin70aa/API_ML_AI/blo
 * 使用比较分析（包含Object Detection API的调用）
     * [AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face++API](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 
-* 物体检测使用后风险报告_输入输出限制 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
+* 物体检测使用后风险报告_输入输出限制     
+    * [Azure_cv_image_tag_risk](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
