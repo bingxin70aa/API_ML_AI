@@ -1,6 +1,7 @@
 # 云起APP产品需求文档
 * 首个产品需求文档“ PRD.md” 现更改为“PRD_1.0”(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 这是个针对K12阶段用户培养英语单词兴趣的教育类app。
+* 若文档无法正常浏览请移步[Gitee](https://gitee.com/bingxin70aa/API_ML_AI/blob/master/README.md)
 ---
 - [PRD](#前期目标PRD)
     - [加值宣言](#1产品背景介绍加值宣言)
@@ -49,14 +50,14 @@ V2.1.2|2018-12-26| 单词集API+单词纠错API
 #### 2、用户痛点
 * 孩子：
    
-    * 仅会初期对实物翻译app有好奇心，但难以长久。
-    * 百度的实物翻译的流程较繁琐，需进行涂抹后才能锁定识别对象。
     * 用户觉得单纯的单词背诵些枯燥无味，难以坚持
     * 大部分用户觉得背单词只是任务，自身无很强的动力和自制力，多数依赖父母，由其监管下进行。
     * 单词背不下来（引入艾宾浩斯记忆曲线+K12群体记忆持久度的一个弹性变化）
 * 家长：
     * 相比以前，当代家长更专注于培养孩子的兴趣，而不是是死读书的应试教育。（[极光大数据](http://www.gzqcyx.com/p/162923-248237-18953.html)）
     * 担心孩子看手机时间长，对眼睛不好
+* 其他：
+    * 百度翻译中的实物翻译的流程较繁琐，需进行涂抹后才能锁定识别对象。
 
 
 #### 3、术语和缩写解释
@@ -87,11 +88,11 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
          1. 用户可通过滑动卡片，选择性添加识别对象的单词及中文意思（见交互原型的[链接](https://bingxin70aa.github.io/Axure_interactive_care_app/)）
          2. 创建一个用户界面，指引人们在运行之前确保摄像头画面中已经出现了要识别的目标（TensorFlow，具体可见[此处](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb))
 ##### 5.2 极端用例
-* 无网络链接：一方面在失去网络后及时提供页面及文字的反馈提醒用户，另一方面对于单词集实际现离线缓存，或许也可以考虑Azure移动应用中的脱机数据同步，使应用不需要网络连接就能正常运行。
+* 无网络链接：一方面在失去网络后及时提供页面及文字的反馈提醒用户，另一方面对于单词集实际现离线缓存，也会考虑Azure移动应用中的脱机数据同步，使应用不需要网络连接就能正常运行。
 
 
 
-#### 6、目标用户、使用场景
+#### 6、目标用户与使用场景
 * 目标用户：主要针对5岁至18岁，对英语单词记忆有困难又提不起兴趣，对英语一窍不通或者半知半解的K12阶段学龄孩童。
 
 * 使用场景：任何时间地点
@@ -103,7 +104,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 物体检测 | 用户想要认识物体对象 |重要|[计算机视觉-Azure-REST API-分析图像](https://docs.azure.cn/zh-cn/cognitive-services/computer-vision/concept-tagging-images#image-tagging-example)
 单词翻译 | 用户想要了解检测对象的中文释义 | 重要|[有道智云API](https://ai.youdao.com/docs/doc-trans-api.s#p08)
 发音纠错 | 用户想要检验单词发音的精准度 | 重要 | [腾讯云-智聆口语评测（英文版）](https://cloud.tencent.com/product/soe)
-单词集（库） | 用户不那么想要通过物体识别获取单词 |一般|[我爱背单词](https://www.showapi.com/api/view/8)
+单词集（库） | 用户不那么想要通过物体识别获取单词，可以通过单词库获得单词 |一般|[我爱背单词](https://www.showapi.com/api/view/8)
 
 ### 二、产品角色
 
@@ -117,7 +118,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 #### 1、产品功能结构图
 
-详细[参见](http://naotu.baidu.com/file/5b20bc63ca50292ff8df5be236ec1e97?token=f53846efae32b3ab)
+[参见](http://naotu.baidu.com/file/5b20bc63ca50292ff8df5be236ec1e97?token=f53846efae32b3ab)
 
 ![产品功能结构图](https://github.com/bingxin70aa/API_ML_AI/blob/master/img/V2.1_function_structure_diagram.jpg?raw=true)
 
@@ -191,7 +192,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 ##### 6.1.3 **我爱背单词-单词集API**
 * [***English_word_qpi_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/English_word_API.ipynb)
 
-#### 2、TensorFlow Object Detection API(舍弃)
+#### 2、TensorFlow Object Detection API(弃)
 * [***Object_Detaction_api_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 
 #### 3、使用比较分析结果
@@ -205,7 +206,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 >* 百度API
 * 识别效果垫底，肉眼可见不赘述
 >* Face++_Detect Scene And Object API
-* 相比之下，Face++的API精准度远不如Azure和谷歌的API，不仅将对象的空间误识别为超市（事实上是饭堂），数量上也并没有优势。
+* 相比之下，Face++的API精准度远不如Azure和谷歌的API，不仅将对象的空间误识别为超市（事实上是饭堂），检测到的对象在数量上也并没有优势。
 
 
 * 速度：百度>Azure>Face++>谷歌
@@ -213,11 +214,11 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * 价格（粗略判断）：Face++>Azure>百度>谷歌
 
 
-* **结论**：因为Azure-标记图像的调用结果已经能满足用户的调用需求，而目前（力所能及之下）调用google Object Detection API的结果缺点过于明显，因此Azure-标记图像更加适用该产品。
+* **结论**：因为Azure-标记图像的调用结果已经能满足用户的调用需求，而目前（力所能及之下）调用Google Object Detection API的结果缺点过于明显，因此选择<Azure-标记图像>更加适用该产品。
 
 ##### 3.2 英语发音纠错API
 * [腾讯云](https://imgcache.qq.com/open/qcloud/soe-demo/pc-demo/index.html#/word?pattern=3.5)
-    * 支持从儿童到成人全年龄覆盖的语音评测，支持单词（词语），句子等多种模式，支持发音准确度（GOP），流利度，完整度，重音准确度等全方位打分机制，专家打分相似度 95% 以上。【官方资料】
+    * 支持从儿童到成人全年龄覆盖的语音评测，支持单词（词语），句子等多种模式，支持发音准确度（GOP），流利度，完整度，重音准确度等全方位打分机制，专家打分相似度 95% 以上。【官方描述资料】
     * 返回数据结构：
         * 主要参数为：句子、单词、音节
         * 相比之下的优势：有精准度、流利度、完整度指标
@@ -225,8 +226,8 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
     * 返回数据结构：
         * 主要参数为：句子、单词、音节、音素 
         * 相比之下的优势：有英式英语和美式英语提供选择；有评测等级（宽松、中等、严格）
-* 选择调用结果（暂定）：腾讯云
-* ps : 因两个API都未支持python，所以没有代码的调用仅是文字比对。
+* 选择调用结果：腾讯云
+* ps : 因两个API都未支持python，所以没有代码的调用展示仅是文字比对。
 
 #### 4、风险报告
 ##### 4.1 物体检测API发展性
@@ -234,7 +235,7 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 ##### 4.2 输入输出限制
 
-[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
+python调用测试，详细[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
 * 黑白照片不影响识别结果（不涉及灰度）
 * 模糊的照片会对识别个数以及识别准确率带来一定程度的影响
 * 在识别人的方面准确率较高，但物体上如果物体离镜头过近、角度问题、或是没有拍摄出物体的基本特征就会导致识别错误或是识别不准确。
@@ -245,14 +246,14 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 
 ##### 4.3 市场竞争程度
 ###### 4.3.1 物体识别app市场
-* 百度翻译 ：实物检测在该翻译APP的<小应用>中存在。识别物体的流程为：输入图片（相册/相机）——圈出（涂抹出）检测对象——输出中英翻译结果。在识别物体中增加了涂抹的一个步骤，给用户带来了不必要的麻烦，而且识别成功率很低（2/5）.识别失败后就会重新再进行图片输入，流程过于繁琐，给用户带来不好的用户体验。
+* 百度翻译 ：实物检测在该翻译APP的<小应用>中存在。识别物体的流程为：输入图片（相册/相机）——圈出（涂抹出）检测对象——输出中英翻译结果。在识别物体中增加了涂抹的一个步骤，给用户带来了不必要的麻烦，而且识别成功率极低（2/5）.识别失败后就会重新再进行图片输入，流程过于繁琐，给用户带来不好的用户体验。
 * 听道/eyemene : 针对于盲人朋友的一款为生活提供便利的 app，因用户画像差异较大便不予以比较。
 
 ###### 4.3.2 单词记忆app市场
-* 不背单词/墨墨/百词斩/沪江开心词场 ：市面上的单词记忆类app多数是给带有功利性目的（考研/四六级/高考）的用户去背诵单词，而不是为了让用户培养对单词兴趣。且让K12群体与大学生、出国党、工作党都共用一套记忆曲线模型，与“因材施教”的教育理念显然有所悖斥。同时，此类APP也没有针对用户的记忆情况有个评估结果的反馈，很容易猜想是否用户因为缺乏能动性导致多数都半途而废难以坚持完成记忆任务。
+* 不背单词/墨墨/百词斩/沪江开心词场 ：市面上的单词记忆类app多数是给带有功利性目的（考研/四六级/高考）的用户去背诵单词，而不是为了让用户培养对单词兴趣。且让K12群体与大学生、出国党、工作党都共用一套记忆曲线模型，与“因材施教”的教育理念显然有所悖斥。同时，此类APP也没有针对用户的记忆情况有个评估结果的反馈，让人容易猜想是否因为缺乏主观能动性导致多数用户都半途而废难以坚持完成记忆任务。
 
 ### N、后期准备及参考资料
-* [PRD初期推进方式及思考](http://note.youdao.com/noteshare?id=9e2e2d3a2cf39b53818b7f4095a0de5e)
+* [PRD初期推进](http://note.youdao.com/noteshare?id=9e2e2d3a2cf39b53818b7f4095a0de5e)
 
 * [杂乱无章](http://note.youdao.com/noteshare?id=6fd7164543137fb310dac76de65948fe)
 
@@ -261,8 +262,8 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
     
 ## 清单
 * [产品原型文档](https://bingxin70aa.github.io/Axure_yunqi/)
-* [可交互产品原型](https://bingxin70aa.github.io/Axure_interactive_care_app/)
-* [可供下载的MVP](https://github.com/bingxin70aa/Axure_interactive_care_app)
+* [可交互产品原型](https://bingxin70aa.github.io/Axure_interactive_care_app/) PS：某些交互展示可能需双击才能展示，能力有限恳请谅解。
+* [MVP可交互的原型文档下载地址](https://github.com/bingxin70aa/Axure_interactive_care_app)
 * 前 PRD.md 现更改为PRD_1.0(肤质检测app）请[参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/PRD_1.0.md)
 * 已尝试调用的API的输入输出
     * [***azure_cv_API_request***](https://github.com/bingxin70aa/API_ML_AI/blob/master/azure_cv_API_request.ipynb)
@@ -271,4 +272,4 @@ K12 | K12,教育类专用名词（kindergarten through twelfth grade），是学
 * 使用比较分析（包含Object Detection API的调用）
     * [AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face++API](https://github.com/bingxin70aa/API_ML_AI/blob/master/AzureAPI_vs_ObjectDetectionAPI_vs_baiduAPI_vs_Face%2B%2BAPI%20.ipynb)
 
-* 使用后风险报告_输入输出限制 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
+* 物体检测使用后风险报告_输入输出限制 [参见](https://github.com/bingxin70aa/API_ML_AI/blob/master/Azure_cv_image_tag_risk.ipynb)
